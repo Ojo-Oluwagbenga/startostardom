@@ -1329,6 +1329,12 @@ blog
   height: 200px;
 }
 
+.blog-post-thumb .img img{
+  object-fit: contain;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .blog-post-thumb .blog-content {
   margin-top: -30px;
   padding-top: 50px;
