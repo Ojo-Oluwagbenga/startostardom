@@ -546,13 +546,14 @@ https://templatemo.com/tm-535-softy-pinko
                                         let email = $("#email").val()
                                         let message = $("#message").val()
 
-                                        if (name="" || email == "" || message == ""){
+                                        if (name =="" || email == "" || message == ""){
                                             alert ("Please fill all feilds");
                                             return
                                         }
-                                        share(`Hello @Star to stardom? \n \n 
-                                                I am ${name} @ ${email} \n \n 
-                                                ${message}`
+                                        share(`Hello @Star to stardom? \n
+                                                I am ${name}\n 
+                                                ${message}\n
+                                                You can also reach me via ${email} `
                                                 );
                                     });
                                     
