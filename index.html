@@ -538,9 +538,10 @@ https://templatemo.com/tm-535-softy-pinko
                                 <script>
                                     function share(text){
                                         text = encodeURI(text);
-                                        window.location.href = 'https://api.whatsapp.com/send?text='+text + '&phone="+2348067264593"';
+                                        // window.location.href = 'https://api.whatsapp.com/send?text='+text + '&phone="+2348067264593"';
                                     }
-                                    $("#form-submit").click(function(){
+                                    $("#form-submit").click(function(e){
+                                        e.preventDefault();
                                         let name = $("#uname").val()
                                         let email = $("#email").val()
                                         let message = $("#message").val()
